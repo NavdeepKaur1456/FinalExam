@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CollegeDataService } from '../college-data.service';
-import { College } from '../college'; // Assuming College is a class with a constructor
+import { College } from '../college';
 
 @Component({
   selector: 'app-college',
@@ -8,8 +8,8 @@ import { College } from '../college'; // Assuming College is a class with a cons
   styleUrls: ['./college.component.css']
 })
 export class CollegeComponent implements OnInit {
-  college: College = new College(); // Initialize with default values
-  imageUrl = '/assets/Images/college/'; // Adjust the path as needed
+  college: College = new College();
+  imageUrl = '/assets/Images/college/';
 
   constructor(private collegeDataService: CollegeDataService) {}
 

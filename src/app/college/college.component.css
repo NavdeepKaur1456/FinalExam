@@ -1,0 +1,22 @@
+.college-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid lightskyblue;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.college-container h2 {
+  margin-bottom: 10px;
+}
+
+.college-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.college-container p {
+  margin-bottom: 5px;
+}
