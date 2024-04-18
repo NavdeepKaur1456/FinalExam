@@ -1,0 +1,31 @@
+.app-footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+.app-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Creative animation */
+@keyframes colorChange {
+  0% { color: white; }
+  50% { color: #ffcc00; }
+  100% { color: white; }
+}
+
+.app-footer p {
+  animation: colorChange 5s infinite;
+}
