@@ -1,38 +1,38 @@
-// Core imports
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule for making HTTP requests
+import { HttpClientModule } from '@angular/common/http';
 
-// Routing Module
-import { AppRoutingModule } from './app-routing.module'; // Import the AppRoutingModule for routing
+
+import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component'; // Make sure the path is correct
-import { FooterComponent } from './footer/footer.component'; // Make sure the path is correct
-import { CollegeComponent } from './college/college.component'; // Make sure the path is correct
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { CollegeComponent } from './college/college.component';
 
 // Services
-import { CollegeDataService } from './college-data.service'; // Make sure the path is correct
+import { CollegeDataService } from './college-data.service';
 
 @NgModule({
   declarations: [
-    // Declare components here
+
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CollegeComponent, // Declare the CollegeComponent
+    CollegeComponent,
   ],
   imports: [
-    // Import Angular modules here
+
     BrowserModule,
-    AppRoutingModule, // Include it in the imports array
-    HttpClientModule, // Include HttpClientModule to enable HTTP services
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [
-    // List services here
-    CollegeDataService, // Provide the CollegeDataService
+
+    CollegeDataService,
   ],
-  bootstrap: [AppComponent] // Bootstrapping the AppComponent
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { College } from './college';
-import { COLLEGE_DATA } from './catalog-data'; // Ensure the path to catalog-data.ts is correct
+import { COLLEGE_DATA } from './catalog-data';
 
 @Injectable({
   providedIn: 'root'
@@ -30,7 +30,7 @@ export class CollegeDataService {
   }
 
   public getCollegeData(): Observable<College> {
-    // This method returns an observable of the current college data
+
     return of(this.college);
   }
 }
